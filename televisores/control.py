@@ -1,38 +1,28 @@
 from televisores.tv import TV
 
-class Control:
-    def __init__(self):
-        pass
-
-    def enlazar(self, televisor):
-        self._tv = televisor
-        self._tv.control = self
-
-    def getTv(self):
-        return self._tv
-
-    def setTv(self, televisor):
-        self._tv = televisor
-    
-    def volumenUp(self):
-        self._tv.volumenUp()
-
-    def volumenDown(self):
-        self._tv.volumenDown()
-
-    def turnOff(self):
-        self._tv.turnOff()
-
-    def turnOn(self):
-        self._tv.turnOn()
-
-    def setCanal(self, i):
-        self._tv.setCanal(i)
-
-    def canalUp(self):
-        self._tv.canalUp()
-
-    def canalDown(self):
-        self._tv.canalDown()
-
-    
+class Control: 
+  
+     def __init__(self): 
+         self.tv = None 
+      
+     def getTv(self): 
+         return self.tv 
+     def setTv(self, tv): 
+         self.tv = tv 
+     def enlazar(self, tv): 
+         self.tv = tv 
+         self.tv.setControl(self) 
+     def setCanal(self,i): 
+         self.tv.setCanal(i) 
+     def turnOn(self): 
+         self.tv.turnOn() 
+     def turnOff(self): 
+         self.tv.turnOff() 
+     def canalUp(self): 
+         self.tv.canalUp() 
+     def canalDown(self): 
+         self.tv.canalDown() 
+     def volumenUp(self): 
+         self.tv.volumenUp() 
+     def volumenDown(self): 
+         self.tv.volumenUp()
