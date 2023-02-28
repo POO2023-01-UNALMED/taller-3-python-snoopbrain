@@ -75,4 +75,17 @@ class TV:
         if self._estado and self._volumen > 0 and self._volumen < 8:
             self._volumen -= 1
 
+
+
+
+
+
+
+
+
+
+
+
+
+
      
